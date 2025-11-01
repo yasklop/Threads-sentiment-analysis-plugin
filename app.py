@@ -41,7 +41,7 @@ def load_model(model_name, model_version):
         return None
 
 
-model = load_model('Threads_Sentiment_Analysis_Model', '1')
+model = load_model('Threads_Sentiment_Analysis_Model', '3')
 
 @app.route('/')
 def home():
@@ -60,7 +60,7 @@ def predict():
         preprocessed_comments = [preprocess_text(comment) for comment in comments]
         
         # Make predictions
-        predictions = model.predict(preprocessed_comments)
+        predictions = model(preprocessed_comments)
         print(predictions)
         response = []
         for original_comment, prediction in zip(comments, predictions):
