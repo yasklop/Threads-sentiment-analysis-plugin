@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Threads 情感分析器",
+  "version": "0.2",
+  "description": "分析 Threads 貼文下的評論情感。",
+  
+  "action": {
+    "default_popup": "popup.html"
+  },
+
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://www.threads.net/*",
+    "http://ec2-54-249-36-142.ap-northeast-1.compute.amazonaws.com:5000/*"
+  ]
+  
+
+}
+

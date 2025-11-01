@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Threads 情感分析</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Threads 情感分析</h1>
+        <div id="status" class="status-message">點擊分析按鈕以開始</div>
+        
+        <button id="analyzeButton">分析此貼文評論</button>
+
+        <div id="resultsContainer" style="display: none;">
+            <h2>分析結果總覽</h2>
+            <div id="summary">
+                <p>總評論數: <span id="totalCount">0</span></p>
+            </div>
+            
+            <div class="chart-area">
+                <canvas id="sentimentChart"></canvas>
+            </div>
+
+            <div id="sentimentBreakdown">
+                <!-- 情感分類統計將顯示在這裡 -->
+            </div>
+        </div>
+        <div id="commentList" style="display: none;">
+            <h3>所有讀取的評論 (共 <span id="readCount">0</span> 則)</h3>
+            <ul id="commentUl">
+                <!-- 評論列表將顯示在這裡 -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- 載入 Chart.js 函式庫 -->
+    <script src="lib/chart.js"></script>
+    <!-- 載入插件邏輯 -->
+    <script src="popup.js"></script>
+</body>
+</html>

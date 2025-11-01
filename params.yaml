@@ -1,0 +1,8 @@
+model_params:
+  model_name: "bert-base-uncased"
+  max_length: 128
+  batch_size: 16
+  num_epochs: 3
+  random_state: 42
+  split_ratio: 0.2
+  learning_rate: 2e-5

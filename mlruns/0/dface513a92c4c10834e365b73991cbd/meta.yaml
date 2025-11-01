@@ -1,0 +1,14 @@
+artifact_uri: file:///c:/Users/tim/Desktop/Threads-sentiment-analysis-plugin/mlruns/0/dface513a92c4c10834e365b73991cbd/artifacts
+end_time: 1761849636725
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: dface513a92c4c10834e365b73991cbd
+run_name: unique-hare-619
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761849636668
+status: 3
+tags: []
+user_id: tim

@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    width: 350px; /* 增加寬度以容納圖表 */
+    min-height: 250px;
+    background-color: #f4f7f6;
+}
+
+.container {
+    padding: 15px 20px;
+}
+
+h1 {
+    font-size: 1.4em;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.1em;
+    color: #007bff;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 1em;
+    color: #6c757d;
+    margin-top: 15px;
+}
+
+.status-message {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #e9ecef;
+    color: #333;
+    text-align: center;
+}
+
+.status-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+#analyzeButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+#analyzeButton:hover {
+    background-color: #218838;
+}
+
+#resultsContainer {
+    margin-top: 20px;
+}
+
+.chart-area {
+    width: 100%;
+    height: 200px; /* 圖表高度 */
+    margin: 15px 0;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#sentimentBreakdown p {
+    margin: 5px 0;
+    font-size: 0.95em;
+    border-bottom: 1px dotted #eee;
+    padding-bottom: 2px;
+}
+
+/* 僅供除錯用的評論列表 */
+#commentUl {
+    max-height: 150px;
+    overflow-y: auto;
+    list-style: disc;
+    padding-left: 20px;
+}
+
+#commentUl li {
+    font-size: 0.8em;
+    color: #495057;
+    margin-bottom: 3px;
+    word-break: break-word;
+}
