@@ -1,11 +1,11 @@
 // API 設置 (請確保您的 EC2 IP 和 port 是正確的)
-const API_URL = "http://127.0.0.1:5000/predict";
+const API_URL = "http://52.194.220.86:8080/predict";
 
 // 標籤映射
 const SENTIMENT_LABELS = {
     '0': '正面',
-    '1': '負面',
-    '2': '中立',
+    '1': '中立',
+    '2': '負面',
     '3': '無關',
 };
 
