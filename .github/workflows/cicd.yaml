@@ -83,7 +83,7 @@ jobs:
       
       - name: Clean previous images and containers
         run: |
-          docker system prune -a -f
+         docker system prune -a -f
       
       - name: Pull latest images
         run: |
